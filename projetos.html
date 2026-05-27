@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Projetos | Gabriel Geovani</title>
-    <meta name="description" content="Galeria de projetos desenvolvidos por Gabriel Geovani Celestino Nunes.">
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,63 +15,114 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     
     <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .back-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+            font-weight: 500;
+            transition: var(--transition);
+        }
+        .back-btn:hover {
+            color: var(--accent-color);
+            transform: translateX(-5px);
+        }
+        .projects-page-header {
+            padding-top: 120px;
+            padding-bottom: 40px;
+        }
+    </style>
 </head>
 <body>
 
-    <header>
-        <nav class="navbar scrolled" aria-label="Navegação secundária">
-            <div class="container">
-                <a href="index.html" class="logo">GABRIEL <span>GEOVANI</span></a>
-                <a href="index.html" class="btn btn-outline btn-sm">Voltar ao Início</a>
-            </div>
-        </nav>
-    </header>
+    <nav class="navbar scrolled">
+        <div class="container">
+            <a href="index.html" class="logo">GABRIEL <span>GEOVANI</span></a>
+            <a href="index.html" class="btn btn-outline btn-sm">Voltar ao Início</a>
+        </div>
+    </nav>
 
-    <main class="container page-header">
-        <a href="index.html" class="back-btn" aria-label="Voltar para a página principal"><i data-lucide="arrow-left" aria-hidden="true"></i> Voltar para o Portfólio</a>
+    <main class="container projects-page-header">
+        <a href="index.html" class="back-btn"><i data-lucide="arrow-left"></i> Voltar para o Portfólio</a>
         
-        <header class="section-header">
+        <div class="section-header">
             <h1 class="section-title">Todos os Projetos</h1>
             <p style="color: var(--text-secondary); margin-top: 1rem;">Galeria completa de aplicações web, mobile e sistemas desenvolvidos.</p>
             <div class="title-line"></div>
-        </header>
+        </div>
 
-        <!-- Grid de Projetos -->
+        <!-- Grid de Projetos (Onde você anexa seus projetos) -->
         <div class="projects-grid">
             
             <!-- Projeto 1 -->
             <article class="project-card">
                 <div class="project-image">
-                    <img src="assets/img/fluxus.png" alt="Interface do sistema Fluxus">
+                    <img src="/assets/img/fluxus.png" alt="Fluxus">
                 </div>
                 <div class="project-info">
                     <h3>Fluxus</h3>
                     <p>React, Vite, JavaScript e CSS: Sistema completo de gestão de finanças pessoais com dashboards interativos.</p>
-                    <a href="http://fluxus-ashy.vercel.app/" class="btn-text" target="_blank" rel="noopener noreferrer">Ver Projeto <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+                    <a href="http://fluxus-ashy.vercel.app/" class="btn-text">Ver Projeto <i data-lucide="arrow-up-right"></i></a>
                 </div>
             </article>
 
             <!-- Projeto 2 -->
             <article class="project-card">
                 <div class="project-image">
-                    <img src="assets/img/projeto1.png" alt="Interface da Landing Page Business">
+                    <img src="/assets/img/projeto1.png" alt="Landing Page Business">
                 </div>
                 <div class="project-info">
                     <h3>Landing Page Business</h3>
                     <p>Html, CSS e JavaScript: Site institucional moderno para empresas com foco em conversão e SEO.</p>
-                    <a href="https://gabrielgeovaniixz.github.io/fusioninnovations/" class="btn-text" target="_blank" rel="noopener noreferrer">Ver Projeto <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+                    <a href="https://gabrielgeovaniixz.github.io/fusioninnovations/" class="btn-text">Ver Projeto <i data-lucide="arrow-up-right"></i></a>
                 </div>
             </article>
 
             <!-- Projeto 3 -->
             <article class="project-card">
                 <div class="project-image">
-                    <img src="assets/img/projeto-fokus.png" alt="Interface do aplicativo Fokus Pomodoro">
+                    <img src="/assets/img/projeto-fokus.png" alt="Fokus Pomodoro">
                 </div>
                 <div class="project-info">
                     <h3>Fokus Pomodoro</h3>
                     <p>React Native e Expo: Aplicativo com o objetivo de auxiliar na organização do tempo e aumento da produtividade utilizando a técnica Pomodoro. </p>
-                    <a href="https://github.com/gabrielgeovaniixz/fokus-pomodoro" class="btn-text" target="_blank" rel="noopener noreferrer">Ver Projeto <i data-lucide="arrow-up-right" aria-hidden="true"></i></a>
+                    <a href="https://github.com/gabrielgeovaniixz/fokus-pomodoro" class="btn-text">Ver Projeto <i data-lucide="arrow-up-right"></i></a>
+                </div>
+            </article>
+
+            <!-- Projeto 4 -->
+            <article class="project-card">
+                <div class="project-image">
+                    <img src="/assets/img/projeto-iso.png" alt="Fokus Pomodoro">
+                </div>
+                <div class="project-info">
+                    <h3>IsoProCell</h3>
+                    <p>Html, CSS e JavaScript: Site sobre a IsoProCell, A primeira assistência móvel de Brasília! </p>
+                    <a href="https://iso-pro-cell.vercel.app/" class="btn-text">Ver Projeto <i data-lucide="arrow-up-right"></i></a>
+                </div>
+            </article>
+            <!-- Projeto 5 -->
+            <article class="project-card">
+                <div class="project-image">
+                    <img src="/assets/img/projeto-modelo.png" alt="Fokus Pomodoro">
+                </div>
+                <div class="project-info">
+                    <h3>Modelo Landing Page</h3>
+                    <p>Html, CSS e JavaScript: Modelo de site para soluções empresariais! </p>
+                    <a href="https://gabrielgeovaniixz.github.io/modelolandigpage/" class="btn-text">Ver Projeto <i data-lucide="arrow-up-right"></i></a>
+                </div>
+            </article>
+            <!-- Projeto 6 -->
+            <article class="project-card">
+                <div class="project-image">
+                    <img src="/assets/img/projeto-gym.png" alt="Fokus Pomodoro">
+                </div>
+                <div class="project-info">
+                    <h3>PowerGym</h3>
+                    <p>Html, CSS e JavaScript: Modelo de Landing Pages para academias! </p>
+                    <a href="https://gabrielgeovaniixz.github.io/PowerGym/" class="btn-text">Ver Projeto <i data-lucide="arrow-up-right"></i></a>
                 </div>
             </article>
 
@@ -89,6 +139,7 @@
 
     <script src="assets/js/main.js"></script>
     <script>
+        // Inicializa os ícones Lucide
         lucide.createIcons();
     </script>
 </body>

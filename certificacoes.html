@@ -4,7 +4,6 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Certificações | Gabriel Geovani</title>
-    <meta name="description" content="Certificações e cursos realizados por Gabriel Geovani Celestino Nunes na área de tecnologia.">
     
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
@@ -16,50 +15,67 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
     
     <link rel="stylesheet" href="assets/css/style.css">
+    <style>
+        .back-btn {
+            display: inline-flex;
+            align-items: center;
+            gap: 0.5rem;
+            color: var(--text-secondary);
+            margin-bottom: 2rem;
+            font-weight: 500;
+            transition: var(--transition);
+        }
+        .back-btn:hover {
+            color: var(--accent-color);
+            transform: translateX(-5px);
+        }
+        .certs-page-header {
+            padding-top: 120px;
+            padding-bottom: 40px;
+        }
+    </style>
 </head>
 <body>
 
-    <header>
-        <nav class="navbar scrolled" aria-label="Navegação secundária">
-            <div class="container">
-                <a href="index.html" class="logo">GABRIEL <span>GEOVANI</span></a>
-                <a href="index.html" class="btn btn-outline btn-sm">Voltar ao Início</a>
-            </div>
-        </nav>
-    </header>
+    <nav class="navbar scrolled">
+        <div class="container">
+            <a href="index.html" class="logo">GABRIEL <span>GEOVANI</span></a>
+            <a href="index.html" class="btn btn-outline btn-sm">Voltar ao Início</a>
+        </div>
+    </nav>
 
-    <main class="container page-header">
-        <a href="index.html" class="back-btn" aria-label="Voltar para a página principal"><i data-lucide="arrow-left" aria-hidden="true"></i> Voltar para o Portfólio</a>
+    <main class="container certs-page-header">
+        <a href="index.html" class="back-btn"><i data-lucide="arrow-left"></i> Voltar para o Portfólio</a>
         
-        <header class="section-header">
+        <div class="section-header">
             <h1 class="section-title">Minhas Certificações</h1>
             <p style="color: var(--text-secondary); margin-top: 1rem;">Aqui você encontra todos os meus certificados, cursos e especializações na área de tecnologia.</p>
             <div class="title-line"></div>
-        </header>
+        </div>
 
-        <!-- Grid de Certificados -->
+        <!-- Grid de Certificados (Onde você anexa seus cursos) -->
         <div class="certificates-grid">
             <!-- Certificado 1 -->
-            <article class="certificate-card">
+            <div class="certificate-card">
                 <div class="cert-image">
-                    <img src="assets/img/cert1.png" alt="Certificado Alura - Formação PHP Full Stack">
+                    <img src="assets/img/cert1.png" alt="Certificado PHP">
                     <div class="cert-overlay">
-                        <button class="view-cert-btn" data-cert="assets/img/cert1.png" aria-label="Visualizar certificado">Visualizar <i data-lucide="eye" aria-hidden="true"></i></button>
+                        <button class="view-cert-btn" data-cert="assets/img/cert1.png">Visualizar <i data-lucide="eye"></i></button>
                     </div>
                 </div>
                 <div class="cert-info">
                     <span class="cert-issuer">Alura</span>
-                    <h3>Formação PHP Full Stack</h3>
-                    <p>Especialização em PHP moderno e boas práticas.</p>
+                    <h3>Começando em programação</h3>
+                    <p>Carreira e primeiros passos.</p>
                 </div>
-            </article>
+            </div>
 
             <!-- Certificado 2 -->
-            <article class="certificate-card">
+            <div class="certificate-card">
                 <div class="cert-image">
-                    <img src="assets/img/cert2.png" alt="Certificado Alura - Git e GitHub">
+                    <img src="assets/img/cert2.png" alt="Certificado React">
                     <div class="cert-overlay">
-                        <button class="view-cert-btn" data-cert="assets/img/cert2.png" aria-label="Visualizar certificado">Visualizar <i data-lucide="eye" aria-hidden="true"></i></button>
+                        <button class="view-cert-btn" data-cert="assets/img/cert2.png">Visualizar <i data-lucide="eye"></i></button>
                     </div>
                 </div>
                 <div class="cert-info">
@@ -67,67 +83,110 @@
                     <h3>Git e GitHub</h3>
                     <p>Compartilhando e colaborando em projetos.</p>
                 </div>
-            </article>
+            </div>
 
             <!-- Certificado 3 -->
-            <article class="certificate-card">
+            <div class="certificate-card">
                 <div class="cert-image">
-                    <img src="assets/img/cert3.png" alt="Certificado Alura - MySQL e Modelagem">
+                    <img src="assets/img/cert3.png" alt="Certificado MySQL">
                     <div class="cert-overlay">
-                        <button class="view-cert-btn" data-cert="assets/img/cert3.png" aria-label="Visualizar certificado">Visualizar <i data-lucide="eye" aria-hidden="true"></i></button>
+                        <button class="view-cert-btn" data-cert="assets/img/cert3.png">Visualizar <i data-lucide="eye"></i></button>
                     </div>
                 </div>
                 <div class="cert-info">
                     <span class="cert-issuer">Alura</span>
-                    <h3>MySQL e Modelagem</h3>
-                    <p>Gestão de banco de dados e consultas avançadas.</p>
+                    <h3>React Native</h3>
+                    <p>Desenvolvendo com Expo.</p>
                 </div>
-            </article>
+            </div>
 
             <!-- Certificado 4 -->
-            <article class="certificate-card">
+             <div class="certificate-card">
                 <div class="cert-image">
-                    <img src="assets/img/cert4.png" alt="Certificado Alura - JavaScript Avançado">
+                    <img src="assets/img/cert8.png" alt="Certificado HTML/CSS">
                     <div class="cert-overlay">
-                        <button class="view-cert-btn" data-cert="assets/img/cert4.png" aria-label="Visualizar certificado">Visualizar <i data-lucide="eye" aria-hidden="true"></i></button>
+                        <button class="view-cert-btn" data-cert="assets/img/cert8.png">Visualizar <i data-lucide="eye"></i></button>
                     </div>
                 </div>
                 <div class="cert-info">
                     <span class="cert-issuer">Alura</span>
-                    <h3>JavaScript Avançado</h3>
-                    <p>Explorando a linguagem com lógica de programação.</p>
+                    <h3>TOEIC BRIDGE</h3>
+                    <p>Certificado de conclusão do curso de inglês TOEIC Bridge Listening and Reading tests</p>
                 </div>
-            </article>
+            </div>
+            
 
             <!-- Certificado 5 -->
-            <article class="certificate-card">
+            <div class="certificate-card">
                 <div class="cert-image">
-                    <img src="assets/img/cert5.png" alt="Certificado Alura - React Native e Expo">
+                    <img src="assets/img/cert5.png" alt="Certificado React Native">
                     <div class="cert-overlay">
-                        <button class="view-cert-btn" data-cert="assets/img/cert5.png" aria-label="Visualizar certificado">Visualizar <i data-lucide="eye" aria-hidden="true"></i></button>
+                        <button class="view-cert-btn" data-cert="assets/img/cert5.png">Visualizar <i data-lucide="eye"></i></button>
                     </div>
                 </div>
                 <div class="cert-info">
                     <span class="cert-issuer">Alura</span>
-                    <h3>React Native e Expo</h3>
-                    <p>Desenvolvimento mobile multiplataforma.</p>
+                    <h3>Pensamento Computacional:</h3>
+                    <p>Fundamentos da computação e Lógica de programação.</p>
                 </div>
-            </article>
+            </div>
 
             <!-- Certificado 6 -->
-            <article class="certificate-card">
+            <div class="certificate-card">
                 <div class="cert-image">
-                    <img src="assets/img/cert6.png" alt="Certificado Alura - HTML5 e CSS3 Moderno">
+                    <img src="assets/img/cert6.png" alt="Certificado HTML/CSS">
                     <div class="cert-overlay">
-                        <button class="view-cert-btn" data-cert="assets/img/cert6.png" aria-label="Visualizar certificado">Visualizar <i data-lucide="eye" aria-hidden="true"></i></button>
+                        <button class="view-cert-btn" data-cert="assets/img/cert6.png">Visualizar <i data-lucide="eye"></i></button>
                     </div>
                 </div>
                 <div class="cert-info">
                     <span class="cert-issuer">Alura</span>
-                    <h3>HTML5 e CSS3 Moderno</h3>
-                    <p>Criação de interfaces responsivas e acessíveis.</p>
+                    <h3>PHP:</h3>
+                    <p>Criando sua aplicação.</p>
                 </div>
-            </article>
+            </div>
+            <!-- Certificado 7 -->
+            <div class="certificate-card">
+                <div class="cert-image">
+                    <img src="assets/img/cert7.png" alt="Certificado HTML/CSS">
+                    <div class="cert-overlay">
+                        <button class="view-cert-btn" data-cert="assets/img/cert7.png">Visualizar <i data-lucide="eye"></i></button>
+                    </div>
+                </div>
+                <div class="cert-info">
+                    <span class="cert-issuer">Alura</span>
+                    <h3>SoftSkills:</h3>
+                    <p>Inteligência Emocional, Competência e habilidades do profissional 4.0</p>
+                </div>
+            </div>
+            <!-- Certificado 8 -->
+            <div class="certificate-card">
+                <div class="cert-image">
+                    <img src="assets/img/cert4.png" alt="Certificado JavaScript">
+                    <div class="cert-overlay">
+                        <button class="view-cert-btn" data-cert="assets/img/cert4.png">Visualizar <i data-lucide="eye"></i></button>
+                    </div>
+                </div>
+                <div class="cert-info">
+                    <span class="cert-issuer">Alura</span>
+                    <h3>Lógica de Programação:</h3>
+                    <p>Mergulhe em programação com JavaScript.</p>
+                </div>
+            </div>
+            <!-- Certificado 9 -->
+            <div class="certificate-card">
+                <div class="cert-image">
+                    <img src="assets/img/cert9.png" alt="Certificado HTML/CSS">
+                    <div class="cert-overlay">
+                        <button class="view-cert-btn" data-cert="assets/img/cert9.png">Visualizar <i data-lucide="eye"></i></button>
+                    </div>
+                </div>
+                <div class="cert-info">
+                    <span class="cert-issuer">Alura</span>
+                    <h3>Fundamentos do Design Gráfico:</h3>
+                    <p>Design Gráfico.</p>
+                </div>
+            </div>
 
             <!-- ADICIONE NOVOS CERTIFICADOS ABAIXO SEGUINDO O MESMO MODELO -->
             
@@ -135,11 +194,11 @@
     </main>
 
     <!-- Modal para Visualização -->
-    <aside id="cert-modal" class="modal" aria-hidden="true" role="dialog">
-        <span class="close-modal" aria-label="Fechar modal">&times;</span>
-        <img class="modal-content" id="modal-img" alt="Certificado em tela cheia">
+    <div id="cert-modal" class="modal">
+        <span class="close-modal">&times;</span>
+        <img class="modal-content" id="modal-img">
         <div id="modal-caption"></div>
-    </aside>
+    </div>
 
     <footer class="footer">
         <div class="container">
@@ -149,6 +208,7 @@
 
     <script src="assets/js/main.js"></script>
     <script>
+        // Inicializa os ícones Lucide
         lucide.createIcons();
     </script>
 </body>
